@@ -1,0 +1,36 @@
+.home-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+.main-heading{
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:900px) {
+    .home-page{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .home-page{
+        width: 80%;
+    }
+}
+@media screen and (max-width:450px) {
+    .home-page{
+        width: 90%;
+    }
+}
+@media screen and (max-width:300px) {
+    .home-page{
+        width: 100%;
+    }
+}

@@ -1,0 +1,42 @@
+.todo-add-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+
+
+.heading-create-task{
+    font-size: 30px;
+}
+
+.heading-create-task span {
+    font-weight: 600;
+}
+
+.todo-input{
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e4e7eb;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+
+.todo-input:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+button{
+    margin-top: 15px;
+    color: #f9fbfe;
+    background-color: #4c63b6;
+    padding: 8px 20px;
+    width: fit-content;
+    font-size: 20px;
+    border-width: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}

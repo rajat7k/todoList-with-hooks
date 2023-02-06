@@ -88,9 +88,9 @@ export default function HomePage() {
 
 
     useEffect(() => {
-        if (!apiFetchResult)
-            fetchIntialTodoList();
-    })
+//         if (!apiFetchResult)
+           fetchIntialTodoList();
+    },[])
     return (
         <div className="home-page">
             <p className="main-heading">

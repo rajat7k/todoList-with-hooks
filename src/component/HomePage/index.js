@@ -40,7 +40,10 @@ export default function HomePage() {
             // note 1 : instead of one liner we can also use for loop  (for loop method works little bit faster)
             // note 2: instead of filtering our unique date we can also use two state one for user input and one for api call data
 
-            const allTodos = [...fetchTodo, ...todosSavedOnLocalStorage];
+            let allTodos=[...fetchTodo]
+            if(todosSavedOnLocalStorage){
+             allTodos = [ ...todosSavedOnLocalStorage];
+            }
             let uniqueTodosArray = [
                 ...new Map(allTodos.map((item) => [item["id"], item])).values(),
             ];
